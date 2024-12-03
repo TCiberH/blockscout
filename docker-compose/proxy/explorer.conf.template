@@ -19,6 +19,7 @@ server {
         proxy_set_header      Upgrade "$http_upgrade";
         proxy_set_header      Connection $connection_upgrade;
         proxy_cache_bypass    $http_upgrade;
+        add_header Content-Security-Policy "default-src 'self' 'unsafe-inline' https: data:; base-uri 'self';";
     }
     location / {
         proxy_pass            ${FRONT_PROXY_PASS};
@@ -30,5 +31,6 @@ server {
         proxy_set_header      Upgrade "$http_upgrade";
         proxy_set_header      Connection $connection_upgrade;
         proxy_cache_bypass    $http_upgrade;
+        add_header Content-Security-Policy "default-src 'self' 'unsafe-inline' https: data:; base-uri 'self';";
     }
 }
