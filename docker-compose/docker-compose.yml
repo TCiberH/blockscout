@@ -47,6 +47,8 @@ services:
         CHAIN_ID: '137'
         START_BLOCK: 65075756
         START_BLOCK_FETCH: 65075756
+        FIRST_BLOCK: 65075756
+        TRACE_FIRST_BLOCK: 65075756
 
   visualizer:
     extends:
