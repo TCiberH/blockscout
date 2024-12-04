@@ -45,8 +45,8 @@ services:
         ETHEREUM_JSONRPC_TRACE_URL: http://82.197.67.157:8545/
         ETHEREUM_JSONRPC_WS_URL: ws://82.197.67.157:8545/
         CHAIN_ID: '137'
-        START_BLOCK: 65075490
-        START_BLOCK_FETCH: 65075490
+        START_BLOCK: 65075756
+        START_BLOCK_FETCH: 65075756
 
   visualizer:
     extends:
